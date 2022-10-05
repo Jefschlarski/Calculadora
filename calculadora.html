@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <section>
+        <div class="visores">
+        <div>
+            <p id="visor_cima"></p>
+        </div>
+        <div>
+            <p id="visor_baixo"></p>
+        </div>
+    </div>
+        <div class="botoes">
+            <ul>
+                <li><button id="esp" onclick="limpar()">AC</button></li>
+                <li><button class="btn" onclick="deletar()"><</button></li>
+                <li><button class="btn_esp" onclick="aplicar('/')">/</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn" onclick="inserir('7')">7</button></li>
+                <li><button class="btn" onclick="inserir('8')">8</button></li>
+                <li><button class="btn" onclick="inserir('9')">9</button></li>
+                <li><button class="btn_esp" onclick="aplicar('*')">x</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn" onclick="inserir('4')">4</button></li>
+                <li><button class="btn" onclick="inserir('5')">5</button></li>
+                <li><button class="btn" onclick="inserir('6')">6</button></li>
+                <li><button class="btn_esp" onclick="aplicar('-')">-</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn" onclick="inserir('1')">1</button></li>
+                <li><button class="btn" onclick="inserir('2')">2</button></li>
+                <li><button class="btn" onclick="inserir('3')">3</button></li>
+                <li><button class="btn_esp" onclick="aplicar('+')">+</button></li>
+            </ul>
+            <ul>
+                <li><button class="btn zero" onclick="inserir('0')">0</button></li>
+                <li><button class="btn" onclick="inserir('.')">,</button></li>
+                <li><button class="igual" id="esp" onclick="igual()">=</button></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
