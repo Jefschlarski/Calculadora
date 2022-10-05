@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+
+}
+#visor_cima{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #383838;
+    
+}
+#visor_baixo{
+    text-align: right;
+    font-size: 20px;
+    color: black;
+}
+
+.visores{
+    height: 80px;
+    width: 220px;
+    background-color: black;
+}
+.visores div{
+    background-color: rgb(161, 161, 161);
+    height: 50px;
+    border: solid 1px;
+    color: black;
+    
+}
+.botoes{
+    background-color: black;
+    width: 220px;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    list-style: none;
+}
+ul li button{
+    width: 50px;
+    height: 40px;
+    background-color: #383838;
+    margin: 1px;
+    color: white;
+}
+
+#exp{
+    width: 103px;
+    background-color: #cfcfcf;
+    color: black;
+}
