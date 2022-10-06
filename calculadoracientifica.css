@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    user-select: none;
+    animation: animate 20s infinite;
+   }
+   
+   @keyframes animate {
+     0% {
+       background: #19dcea;
+     }
+     25% {
+       background: #a240db;
+     }
+     50% {
+       background: #00b5ec;
+     }
+     75% {
+       background: #a240db;
+     }
+     100% {
+       background: #19dcea;
+     }
+   }
+
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0px 0px 10px 0px;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+
+}
+#visor_cima{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    
+}
+#visor_baixo{
+    text-align: right;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 200px;
+    
+}
+
+.visores{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    height: 100px;
+    width: 230px;
+    border-radius: 16px;
+    border-bottom: solid 1px white;
+    user-select:text;
+}
+.visores div{
+    height: 50px;
+    color: white; 
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    list-style: none;
+    justify-content: center;
+}
+ul li button{
+    width: 50px;
+    height: 40px;
+    margin: 0px 2px 0px 2px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+.btn{
+    background-color: #383838;
+}
+.btn:hover{ 
+    background-color: #5e5e5e;
+    
+}
+
+.btn_esp{
+   background-color: #615248;
+}
+
+.btn_esp:hover{
+    background-color: #776457;
+ }
+
+#esp{
+    width: 104px;
+    background-color: #ff5e00;
+    color: black;
+}
+#esp:hover{
+    background-color: #a03b00;
+}
+
+.zero{
+    border-bottom-left-radius: 16px;
+}
+.igual{
+    border-bottom-right-radius: 16px;
+}
